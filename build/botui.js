@@ -27,7 +27,7 @@ botui.message.bot({
 }).then(function() {
     return botui.message.bot({
         delay: 1000,
-        content: "这里是 Cusofer"
+        content: "这里是 Cusnd"
     })
 }).then(function() {
     return botui.message.bot({
@@ -86,7 +86,7 @@ var other = function() {
         return botui.action.button({
             delay: 1500,
             action: [{
-                text: "为什么叫 Cusofer 呢？ 🤔",
+                text: "为什么叫 Cusnd 呢？ 🤔",
                 value: "next"
             }]
         })
@@ -94,6 +94,11 @@ var other = function() {
         return botui.message.bot({
             delay: 1500,
             content: "硫化铜的究极变种，嗯！我化学一向很顶的"
+        })
+    }).then(function() {
+        return botui.message.bot({
+            delay: 1500,
+            content: "伍老师赛高！"
         })
     }).then(function() {
         return botui.action.button({
@@ -107,6 +112,33 @@ var other = function() {
         return botui.message.bot({
             delay: 1500,
             content: "emmmmm，看我名字你就知道了_(:з」∠)_"
+        })
+    }).then(function() {
+        return botui.action.button({
+            delay: 1500,
+            action: [{
+                text: "学不懂数学要怎么办？",
+                value: "next"
+            }]
+        })
+    }).then(function(res) {
+        return botui.message.bot({
+            delay: 1500,
+            content: "转文！ ^_^"
+        })
+    }).then(function() {
+        return botui.action.button({
+            delay: 1500,
+            action: [{
+                text: "物理中，犯错怎么办？",
+                value: "next"
+            }]
+        })
+
+    }).then(function(res) {
+        return botui.message.bot({
+            delay: 1500,
+            content: "初学者犯错很正常，下次不要犯就是了"
         })
     }).then(function(res) {
         return botui.message.bot({
